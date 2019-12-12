@@ -1,1 +1,72 @@
-test
+강의 : https://programmers.co.kr/learn/courses/2
+  생활코딩 : https://opentutorials.org/course/1
+  코딩도장 : https://dojang.io/
+
+  소프트웨어 정부 사이트 : http://www.software.kr/um/main.do
+  구름
+  초중 구름학교 http://goormschool.goorm.io/
+  
+  Jupyter notebook
+  데이터 사이언스 스쿨(데이터 과학을 위한 딥러닝): https://datascienceschool.net/view-notebook/94038f17bb2b4bc8b83e00d1a1ad3eb9/
+  데이터 사이언스 스쿨(데이터 과학을 위한 파이썬기초): https://datascienceschool.net/view-notebook/39569f0132044097a15943bd8f440ca5/
+
+주피터 테마 변경 : pip install jupyterthemes
+                jt -l (테마 리스트)
+                jt -t oceans16 (변경)
+                jt -r (기본)
+
+workspace
+  myproject
+    - mytasks : 파이썬 가상 폴더 (svn/git 대상)
+        - mytask1 : 프로젝트 별
+        - ...
+    - samples (svn samples)
+        - ...
+    - samples_ven
+  mypersonal
+    - ourfamily
+  
+  mytasks_ven
+
+
+1. 설정 초기화
+    전역 사용자명/이메일 구성하기
+    git config --global user.name "이름"
+    git config --global user.email "깃허브 메일주소" // 매번 물어보는 귀찮음을 피하기 위해 설정.
+    저장소별 사용자명/이메일 구성하기 (해당 저장소 디렉터리로 이동후)
+    git config user.name “Your name”
+    git config user.email “Your email address”
+
+    전역 설정 정보 조회
+    git config - -global - -list
+
+2. 현재 폴더 깃 관리 폴더로 설정
+    git init            // 현재 폴더를 깃 명령어를 사용할 수 있는 디렉토리로 만든다.
+
+3. 원격 저장소 위치 확인
+    git remote -v : 원격 저장소가 있는 곳 확인 (fetch 와 push 장소 표시해줌)
+    git remote add origin https://github.com/contravia-cloud/mytasks.git // 로컬과 원격 저장소를 연결한다.
+
+4. local로 받아오기
+    git pull origin master 를 하면 해당 로컬 디렉토리에 repository의 내용을 받아올 수 있다.
+
+5. 올리기
+    'git add -> git commit -> git push'
+    git add 화일명.확장자  // 깃 주목 리스트에 화일을 추가하고 or
+    git add .           // 이 명령은 현재 디렉토리의 모든 화일을 추가할 수 있다.
+    git commit -m “현재형으로 설명” // 커밋해서 스냅샷을 찍는다.
+    git push -u origin master  // 깃허브로 푸시한다.
+
+6. 기타
+  - 변경사항 검토
+    git status          // 현재 상태를 훑어보고
+
+참조 : https://nolboo.kim/blog/2013/10/06/github-for-beginner/
+==============================================================
+git clone https://github.com/contravia-cloud/Academy.ALZZA.git
+git clone https://github.com/contravia-cloud/mytasks.git
+
+이미 다운 받았고, 최신 내용을 git 서버에서 받아와야 한다면,
+git pull과 git fetch로 받을수 있습니다.
+git pull // 코드를 받아와 변경점을 merge한다.
+git fetch // 코드를 받아온다.
