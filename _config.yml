@@ -3,7 +3,7 @@ remote_theme : sighingnow/jekyll-gitbook
 # Configurations
 title:            Jekyll Gitbook
 longtitle:        Jekyll Gitbook
-author:           HE Tao
+author:           seo
 email:            
 description: >
   Build Jekyll site with the GitBook style.
