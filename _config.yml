@@ -1,12 +1,12 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
+title:            Technical Blog 
+longtitle:        Contravia Technical Blog
 author:           seo
 email:            
 description: >
-  Build Jekyll site with the GitBook style.
-version:          1.0
-gitbook_version:  3.2.3
+  Build Jekyll site with the GitBook style~
+version:          
+gitbook_version:  
 
 url:              'https://contravia-cloud.github.io/test'
 baseurl:          
@@ -19,6 +19,7 @@ toc:
 
 # markdown render engine.
 markdown:         kramdown
+# kramdown : markdown의 개조판.
 kramdown:
   auto_ids:               true
   input:                  GFM
