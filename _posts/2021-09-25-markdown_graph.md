@@ -1,0 +1,14 @@
+---
+title: "markdown_graph"
+date: 2021-09-25
+categories: Basic_information
+---
+
+
+```mermaid
+graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
