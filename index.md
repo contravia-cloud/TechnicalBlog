@@ -2,4 +2,6 @@
 layout: home
 ---
 
-Make Jelly site have a GitBook look!~
+This file is TechnicalBlog/index.md
+
+layout: home  -->  _layouts/home.html
