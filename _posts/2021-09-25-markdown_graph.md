@@ -7,10 +7,12 @@ categories: Basic_information
 
 <div class="mermaid"> 
 graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+    A[index.md] -->B[_layouts/home.html]
+    B --> C[_includes/head.html]
+    B --> D[_includes/toc-date.html]
+    B --> E[_includes/body.html]
+    B --> E[_includes/footer.html]
+    E --> F[content]
 </div>
 
 <div class="mermaid"> 
