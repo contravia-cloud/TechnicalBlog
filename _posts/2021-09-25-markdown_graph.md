@@ -11,8 +11,8 @@ graph LR;
     B --> C[_includes/head.html];
     B --> D[_includes/toc-date.html];
     B --> E[_includes/body.html];
-    B --> E[_includes/footer.html];
-    E --> F[content];
+    B --> F[_includes/footer.html];
+    E --> G[content];
 </div>
 
 <div class="mermaid"> 
