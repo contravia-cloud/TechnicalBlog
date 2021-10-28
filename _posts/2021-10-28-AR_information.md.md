@@ -7,7 +7,12 @@ categories: basic-information
 3D object : WebGL, Three.js, AFrame(Web VR)
 Marker-based AR : AR.js, React-Web-AR
 
+https://docs.viromedia.com/docs
+https://aframe.io/docs/1.2.0/introduction/
+
 CodeShareRepeat/web-ar-showcase
+RipNarip/AR-React
+Your first experience with Web AR on desktop
 
 
 ![image](https://user-images.githubusercontent.com/57220434/139257786-2d9ea42e-4fce-42af-aebe-4d357c285410.png)
