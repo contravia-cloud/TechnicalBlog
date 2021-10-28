@@ -3,6 +3,12 @@ title: "how to make AR"
 date: 2021-10-28
 categories: basic-information
 ---
+1. https://threejs.org/examples/?q=webxr#webxr_ar_cones
+   web server for chrome 설치
+   webxr api emulator 설치, 실행, device 설정
+ 
+2. 
+
 
 3D object : WebGL, Three.js, AFrame(Web VR)
 Marker-based AR : AR.js, React-Web-AR
