@@ -28,7 +28,7 @@ tag: [math, computer graphics]
 
 ### 2. 좌표계와 기저
  - 선형독립  
- ![2545C24E569D04232C](https://contravia-cloud.github.io/TechnicalBlog/assets/img/2545C24E569D04232C.jpg)
+ ![Alt text](https://contravia-cloud.github.io/TechnicalBlog/assets/img/2545C24E569D04232C.jpg)
 
 
 
