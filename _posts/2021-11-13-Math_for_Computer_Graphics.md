@@ -27,8 +27,25 @@ tag: [math, computer graphics]
 정규화를 통해 길이가 1인 벡터, $v/\vert \vert v \vert \vert$
 
 ### 2. 좌표계와 기저
- - 선형독립  
- ![Alt text](https://contravia-cloud.github.io/TechnicalBlog/assets/img/2545C24E569D04232C.jpg)
+ - 선형독립과 기저  
+ ![2545C24E569D04232C](https://t1.daumcdn.net/cfile/tistory/24743D4C56A795C00D)
+ - 기저(basis, 基底)란 어떤 벡터공간 V의 벡터들이 선형독립이면서 벡터공간 V 전체를 생성할 수 있다면 이 벡터들의 집합을 말합니다.  다른 말로 표현하자면, 기저는 "R^m의 임의의 원소를 표현하기 위해 필요한 최소한의 벡터로 이루어진 집합"입니다.  
+출처: https://rfriend.tistory.com/164 [R, Python 분석과 프로그래밍의 친구 (by R Friend)]
+
+- 표준 기저 : 주축에 나란한 기저
+- 직교정규(orthonormal) : 서로 직교하는 단위 벡터
+
+### 3. 내적
+### 4. 벡터곱(cross product)
+### 5. 직선 및 선형보간
+- 매개변수 방정식(parametric equation)  
+$$p(t)=p_o+t(p_1-p_0)$$
+$$p(t)=(1-t)p_o+tp_1$$
+- $(1-t)$와 $t$를 각각 $p_0$와 $p_1$에 대한 가중치(weight)
+- $t$의 범위가 [0,1]일 때 $p(t)$는 $p_0$와 $p_1$의 선형보간이라고 한다.
+
+# 3. 모델링
+### 1. 폴리곤 메시
 
 
 
