@@ -32,6 +32,13 @@ kramdown:
 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
+# MathJax 적용
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
 # Permalinks
 permalink:        /:categories/:year-:month-:day-:title:output_ext
 
