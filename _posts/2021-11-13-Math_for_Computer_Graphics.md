@@ -88,5 +88,6 @@ $$ p(t)=(1-t)p_o+tp_1 $$
 : 이때 움직인 오브젝트 공간의 기저는 월드 공간을 기준으로한 ${u,v,n}$로 표현한다.  
 : 따라서 이때의 변환 행렬은 다음과 같이 표현할 수 있다.  
 
-$$ \begin{pmatrix} 1 & 2 \\\ 9 & 5 \end{pmatrix} $$
+$$ \begin{pmatrix} u_x & v_x & n_x \\\ u_y & v_y & n_y \\\ u_z & v_z & n_z \end{pmatrix} $$
+
 
