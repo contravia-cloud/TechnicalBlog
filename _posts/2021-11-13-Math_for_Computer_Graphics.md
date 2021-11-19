@@ -40,10 +40,9 @@ tag: [math, computer graphics]
 ## 2.4. 벡터곱(cross product)
 ## 2.5. 직선 및 선형보간
 - 매개변수 방정식(parametric equation)  
-  
-    
-$$p(t)=p_o+t(p_1-p_0)$$  
-$$p(t)=(1-t)p_o+tp_1$$
+   
+$p(t)=p_o+t(p_1-p_0)$  
+$p(t)=(1-t)p_o+tp_1$
   
 - $(1-t)$와 $t$를 각각 $p_0$와 $p_1$에 대한 가중치(weight)
 - $t$의 범위가 [0,1]일 때 $p(t)$는 $p_0$와 $p_1$의 선형보간이라고 한다.  
