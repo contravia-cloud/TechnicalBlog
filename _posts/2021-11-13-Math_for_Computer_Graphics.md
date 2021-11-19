@@ -83,7 +83,4 @@ $p(t)=(1-t)p_o+tp_1$
 : 오브젝트 공간에서 정의된 물체들을 하나의 좌표계로 통합하는 좌표계  
 ## 4.5. 회전과 오브젝트 공간 기저
 
-\begin{pmatrix}
-1&2\\
-3&4  
-\end{pmatrix}
+\[ \begin{pmatrix} 1 & 2 \\ 3 & 5 \end{pmatrix} \]
