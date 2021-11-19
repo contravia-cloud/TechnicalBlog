@@ -84,5 +84,5 @@ $p(t)=(1-t)p_o+tp_1$
 
 ## 4.5. 회전과 오브젝트 공간 기저
 
-
 $$ \begin{pmatrix} 1 & 2 \\\ 9 & 5 \end{pmatrix} $$
+
