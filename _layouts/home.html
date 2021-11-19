@@ -9,6 +9,11 @@
         {% if reversed_posts %}
             <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
         {% endif %}
+        
+        {% if page.use_math %}
+        {% include mathjax_support.html %}
+        {% endif %}
+        
     </head>
     <body>
         <div class="book">
