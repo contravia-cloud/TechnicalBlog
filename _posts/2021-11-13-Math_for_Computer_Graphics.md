@@ -40,7 +40,6 @@ tag: [math, computer graphics]
 ## 2.4. 벡터곱(cross product)
 ## 2.5. 직선 및 선형보간
 - 매개변수 방정식(parametric equation)  
-   
 $p(t)=p_o+t(p_1-p_0)$  
 $p(t)=(1-t)p_o+tp_1$
   
