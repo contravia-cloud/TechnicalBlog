@@ -2,6 +2,7 @@
 title: "Math for CG"
 date: 2021-10-30
 categories: 
+use_math: true
 tag: [math, computer graphics]
 ---
 
