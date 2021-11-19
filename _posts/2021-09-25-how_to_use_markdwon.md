@@ -14,6 +14,8 @@ categories: basic-information
 
  <https://velog.io/@d2h10s/LaTex-Markdown-수식-작성법>  
 
+ <https://ghdic.github.io/math/default/mathjax-%EB%AC%B8%EB%B2%95/>  
+
 #  mermaid
 
 <div class="mermaid"> 
