@@ -6,6 +6,9 @@ use_math: true
 tag: [math, computer graphics]
 ---
 
+> 본 내용은 'Introduction to Computer Graphics with OpenGL ES'의 번역서인 'OpenGL ES를 이용한 3차원 컴퓨터 그래픽스 입문(한정현,고려대)'을 정리한 것이다.  
+<https://github.com/medialab-ku/openGLESbook>  
+<https://www.youtube.com/playlist?list=PLYEC1V9tJOl03WLDoUEKbiYW_Xt4W6LTl>  
 # 1. 서론
 - 컴퓨터 그래픽스 제작 단계  
     - 모델링 -> 리깅(rigging) -> 애니메이션 -> 랜더링 -> 후처리
@@ -139,7 +142,7 @@ $$ n  = {EYE-AT\over ||EYE-AT|| } \;,\;\; u = {UP\times n\over ||UP\times n||} \
 ## 5.3. 오른손 좌표계와 왼손 좌표계
 > Direct3D는 왼손 좌표계를 OpenGL은 오른손 좌표계를 사용한다.
 
-# 5.4. 투영 변환
+## 5.4. 투영 변환
 > 카메라의 자세를 **외부 파라메터**라고하고 렌즈를 선택하고 줌인/아웃을 조절하는 것은 **내부 파라메터** 조정이라 한다. **내부 파라메터**를 통해 **뷰 볼륨**을 정하고 이를 **투영 변환**하여 **클립 공간**을 구성한다.  
 
 ### 5.4.1. 뷰 프러스텀(frustum, 절두체)
@@ -148,11 +151,34 @@ $$ n  = {EYE-AT\over ||EYE-AT|| } \;,\;\; u = {UP\times n\over ||UP\times n||} \
 - 컬링(culling)  
 : 계산 효율성을 위해 뷰 프러스텀 바깥에 놓인 물체는 걸러져 GPU 파이프라인에 들어가지 않도록 제거해주는 것을 **뷰 프러스텀 컬링**이라 한다. 
 
-### 5.4.2. 투영 행렬
+### 5.4.2. 투영 행렬  
 - 투영 변환  
-피라미드 모양의 뷰 프러스텀을 2x2x2 크기의 정뮥면체 뷰 볼륨으로 변형하는 것  
-3차원 공간 물체를 2차원 투영평면에 투영하는 것이 아님  
+피라미드 모양의 뷰 프러스텀을 2x2x2 크기의 정뮥면체 뷰 볼륨(클립 공간)으로 변형하는 것  
+3차원 공간 물체를 2차원 투영평면에 투영하는 것이 아님.   
 3차원 공간 내에서 원근법을 구현하는 것
-정점 쉐이더가 수행하는 마지막 연산이다. 이후 데이터는 래스터라이저로 들어간다.  
+정점 쉐이더가 수행하는 마지막 연산이다. 이후 물체는 래스터라이저로 들어간다.  
+- 투영 행렬  
+$$ M_{proj} = \begin{pmatrix} {cot{fovy\over 2} \over aspect} & 0 & 0 \\\ 0 & cot{fovy\over 2} & 0 \\\ 0 & 0 & -{f+n\over f-n} & -{2nf \over f-n} \\\ 0 & 0 & -1 & 0 \end{pmatrix} $$  
+
+
+# 6. OpenGL ES와 쉐이더  
+
+## 6.1. OpenGL ES와 쉐이딩 언어  
+- GPU 연산 프로그램  
+정점 쉐이더, 프레그먼트 쉐이더, 컴퓨트 쉐이더, 기하 쉐이더, 테썰레이션  
+- GL과 GLSL  
+GL : OpenGL ES  
+GLSL : OpenGL ES Shading Language  
+
+## 6.2. 정점 쉐이더  
+- 정점 쉐이더의 입력  
+애트리뷰트(attribute) : position, normal, texCoord  
+유니폼(uniform) : 월드/뷰/투영 변환
+- 정점 쉐이더의 출력  
+gl_Position : clip-space vertex position  
+v_normal  
+v_texCoord  
+
+
 
 
