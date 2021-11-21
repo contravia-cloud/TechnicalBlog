@@ -153,7 +153,7 @@ $$ n  = {EYE-AT\over ||EYE-AT|| } \;,\;\; u = {UP\times n\over ||UP\times n||} \
 
 ### 5.4.2. 투영 행렬  
 - 투영 변환  
-피라미드 모양의 뷰 프러스텀을 2x2x2 크기의 정뮥면체 뷰 볼륨(클립 공간)으로 변형하는 것  
+피라미드 모양의 뷰 프러스텀을 2x2x2 크기의 정육면체 뷰 볼륨으로 변형하는 것  
 3차원 공간 물체를 2차원 투영평면에 투영하는 것이 아님.   
 3차원 공간 내에서 원근법을 구현하는 것
 정점 쉐이더가 수행하는 마지막 연산이다. 이후 물체는 래스터라이저로 들어간다.  
@@ -175,9 +175,20 @@ GLSL : OpenGL ES Shading Language
 애트리뷰트(attribute) : position, normal, texCoord  
 유니폼(uniform) : 월드/뷰/투영 변환
 - 정점 쉐이더의 출력  
-gl_Position : clip-space vertex position  
-v_normal  
-v_texCoord  
+gl_Position, v_normal, v_texCoord  
+
+## 6.3. 쉐이더를 위한 OpenGL ES 작업  
+```
+shader = glCreateShader(GL_VERTEX_SHADER); 정점 쉐이더 객체를 만듬
+glShaderSource(shader, 1, &source, NULL); 정점 쉐이더 객체에 GLSL 소스를 입력
+glCompileShader(shader); 컴파일함
+```
+```
+program = glCreateProgram(); 프로그램 객체를 만듬
+glAttachShader(program, shader); 정점/프레그먼트 쉐이더를 붙임
+glLinkProgram(program); 링크
+glUseProgram(program); 사용하겠다고 선언
+```
 
 
 
