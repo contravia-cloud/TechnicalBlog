@@ -39,3 +39,11 @@ MS 메타버스를 협업툴로 활용, 업무용 툴
 계획 -> 관제 -> 서비스(XR로)  
 체험,소통 등으로의 XR  
 
+## WEB3.0  
+
+<https://www.youtube.com/watch?v=z3-knGK18aM>  
+
+|    |WEB1.0|WEB2.0|WEB3.0|  
+|플랫폼|WWW|모바일|메타버스|  
+|디바이스|PC|스마트폰|VR/AR기기|
+
