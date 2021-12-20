@@ -20,3 +20,16 @@ curl -X POST "localhost:9200/logs-my_app-default/_doc?pretty" -H 'Content-Type: 
 '
 ```
 
+  - 우분투 사용자 변경  
+  sudo su : root 사용자로 변경 #  
+  su [사용자] : 사용자로 변경 $  
+  - 설치파일 다운로드  
+  wget ~  
+  - 압축풀기  
+  tar xfz ~  
+  - 실행하기  
+  bin/elasticsearch  
+  - 확인하기  
+  curl -XGET localhost:9200
+
+
