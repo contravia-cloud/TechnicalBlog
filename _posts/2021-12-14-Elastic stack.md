@@ -30,6 +30,25 @@ curl -X POST "localhost:9200/logs-my_app-default/_doc?pretty" -H 'Content-Type: 
   - 실행하기  
   bin/elasticsearch  
   - 확인하기  
-  curl -XGET localhost:9200
+  curl -XGET localhost:9200  
+  - host 설정
+  vi config/elasticsearch.yml  
+  ```
+  cluster.name: "cluster1"  
+  node.name: "node1"
+  network.host: "_site_"
+  discovery.seed_hosts: ["DESKTOP-******"]
+  cluster.initial_master_nodes: ["node1"]
+  ```
+  vi /etc/sysctl.conf  
+  ```
+  vm.max_map_count=262144
+  ```
+  - 방화벽 설정  
+  sudo ufw allow 9200  
+
+
+
+
 
 
