@@ -46,6 +46,13 @@ curl -X POST "localhost:9200/logs-my_app-default/_doc?pretty" -H 'Content-Type: 
   ```
   - 방화벽 설정  
   sudo ufw allow 9200  
+  - kibana 설정  
+  config/kibana.yml  
+  ```
+  server.host: "DESKTOP-********"
+  server.name: "my-kibana"
+  elasticsearch.hosts: ["http://192.168.25.24:9200"]
+  ```
 
 
 
