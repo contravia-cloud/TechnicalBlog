@@ -134,7 +134,9 @@ print("Server Offline")
     }
   }
 }
-```
+```  
+  
+  
 ### 4.2 쿼리 스트링과 쿼리 DSL  
   - 쿼리 스트링 : 한줄 정도의 간단한 쿼리에 사용  
   - 쿼리 DSL : domain specific language, 복잡한 쿼리에 사용  
