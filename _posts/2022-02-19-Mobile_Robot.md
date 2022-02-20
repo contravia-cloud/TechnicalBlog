@@ -24,8 +24,8 @@ date: 2022-02-19
 
 ### 실행 순서  
   - source /opt/ros/foxy/setup.bash  
-  - rosdep install -i --from-path src --rosdistro foxy -y  *종속성 확인*
-  - colcon build --symlink-install  --packages-select  *--symlink-install : install 파일 변경*  
+  - rosdep install -i --from-path src --rosdistro foxy -y  #*종속성 확인*
+  - colcon build --symlink-install  --packages-select  #*--symlink-install : install 파일 변경*  
     
   - source ~/gcamp_ros2_ws/install/local_setup.bash  
   - ros2 run turtlesim turtlesim_node  
