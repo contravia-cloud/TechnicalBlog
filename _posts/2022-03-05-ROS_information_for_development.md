@@ -18,3 +18,11 @@ date: 2022-03-05
     - docker run -it centos:latest bash, 이미지가 없으면 다운받고, 컨테이너를 만들어, 컨테이너를 실행하고(restart), bash로 인터페이스(attach) 진행
     - docker restart <CONTAINER ID> : 컨테이너 실행
     - docker attach <CONTAINER ID> : 터미널과 연결
+  - 도커 디스플레이 연결 - X11 소켓을 통한 연결 방법
+  ```
+  docker run -it \
+    --env="DISPLAY" \
+    --env="QT_X11_NO_MITSHM=1" \
+    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+    osrf/ros:galactic-desktop
+  ```
