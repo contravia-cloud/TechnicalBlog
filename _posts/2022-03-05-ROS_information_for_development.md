@@ -30,11 +30,11 @@ date: 2022-03-05
   ```
 
 ### vnc
-  - 도커 컨테이너 내에서 sudo apt-get update
-  - sudo apt-get install wget
-  - wget https://github.com/novnc/noVNC/archive/refs/tags/v1.3.0.tar.gz
-  - 압축 풀기 tar xvzf https://github.com/novnc/noVNC/archive/refs/tags/v1.3.0.tar.gz
-  - 
+  - 도커 컨테이너 내에서 ```sudo apt-get update```
+  - ```sudo apt-get install wget```
+  - ```wget https://github.com/novnc/noVNC/archive/refs/tags/v1.3.0.tar.gz```
+  - 압축 풀기 ```tar xvzf v1.3.0.tar.gz```
+  - ```./utils/novnc_proxy --vnc localhost:5901```
   
   
   
