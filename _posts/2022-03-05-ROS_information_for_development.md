@@ -7,10 +7,10 @@ date: 2022-03-05
 ### docker
   - https://89douner.tistory.com/123
   - 도커 입문편 : https://www.44bits.io/ko/post/easy-deploy-with-docker
-  - 도커 설치 : curl -s https://get.docker.com | sudo sh
-  - 설치 확인 : docker -v  
-  - 설치 확인 : dpkg --get-selections | grep docker
-  - 작업자를 docker 신규그룹으로 가입 : sudo usermod -aG docker $USER
+  - 도커 설치 : ```curl -s https://get.docker.com | sudo sh```
+  - 설치 확인 : ```docker -v```
+  - 설치 확인 : ```dpkg --get-selections | grep docker```
+  - 작업자를 docker 신규그룹으로 가입 : ```sudo usermod -aG docker $USER```
   - docker 명령어
     - docker ps : 프로세스 확인, unix 계열의 프로세스 확인(ps)과 동일
     - docker ps -a : 모든 컨테이너 확인
