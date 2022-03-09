@@ -28,3 +28,14 @@ date: 2022-03-05
     --device=/dev/dri:/dev/dri \
     osrf/ros:galactic-desktop
   ```
+
+### vnc
+  - 도커 컨테이너 내에서 sudo apt-get update
+  - sudo apt-get install wget
+  - wget https://github.com/novnc/noVNC/archive/refs/tags/v1.3.0.tar.gz
+  - 압축 풀기 tar xvzf https://github.com/novnc/noVNC/archive/refs/tags/v1.3.0.tar.gz
+  - 
+  
+  
+  
+  
