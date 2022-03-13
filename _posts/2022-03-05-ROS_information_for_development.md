@@ -75,5 +75,9 @@ date: 2022-03-05
   - ```docker run --rm -it -p 8080:8080 osrf/ros:ssj```
   - ```http://192.168.25.24:8080/vnc.html```
   
-  
+### 크롬 설치 및 실행
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo apt install ./google-chrome=stable_current_amd64.deb
+  - /opt/google/chrome/chrome --no-sandbox
+
   
