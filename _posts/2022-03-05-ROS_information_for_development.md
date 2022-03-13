@@ -71,7 +71,7 @@ date: 2022-03-05
   RUN chmod +x /app/entrypoint.sh
   EXPOSE 8080
 ```
-  - ```docker build -t osrf/ros:ssj /home/contravia/git```
+  - ```docker build -t osrf/ros:ssj /home/contravia/make-by-dockerfile```
   - ```docker run --rm -it -p 8080:8080 osrf/ros:ssj```
   - ```http://192.168.25.24:8080/vnc.html```
   
