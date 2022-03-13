@@ -41,9 +41,10 @@ date: 2022-03-05
   - download https://github.com/theasp/docker-novnc
   - 
   - Dockerfile edit
-    ```FROM osrf/ros:galactic-desktop
-RUN apt-get update
-RUN set -ex; \
+```
+  FROM osrf/ros:galactic-desktop
+  RUN apt-get update
+  RUN set -ex; \
     apt-get update; \
     apt-get install -y \
       bash \
@@ -55,7 +56,7 @@ RUN set -ex; \
       x11vnc \
       xterm \
       xvfb
-ENV HOME=/root \
+  ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8 \
@@ -65,10 +66,10 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
-COPY . /app
-CMD ["/app/entrypoint.sh"]
-RUN chmod +x /app/entrypoint.sh
-EXPOSE 8080
+  COPY . /app
+  CMD ["/app/entrypoint.sh"]
+  RUN chmod +x /app/entrypoint.sh
+  EXPOSE 8080
 ```
   - ```docker build -t osrf/ros:ssj /home/contravia/git```
   - ```docker run --rm -it -p 8080:8080 osrf/ros:ssj```
