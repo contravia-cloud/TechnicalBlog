@@ -40,7 +40,7 @@ date: 2022-03-05
   - ```docker run --rm -it osrf/ros:galactic-desktop```
   - download https://github.com/theasp/docker-novnc
   - 
-  - Dockerfile edit
+  - Dockerfile edit https://github.com/theasp/docker-novnc/blob/master/Dockerfile
 ```
   FROM osrf/ros:galactic-desktop
   RUN apt-get update
