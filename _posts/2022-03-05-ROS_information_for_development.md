@@ -78,6 +78,6 @@ date: 2022-03-05
 ### 크롬 설치 및 실행
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo apt install ./google-chrome=stable_current_amd64.deb
-  - /opt/google/chrome/chrome --no-sandbox
+  - /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usag
 
   
