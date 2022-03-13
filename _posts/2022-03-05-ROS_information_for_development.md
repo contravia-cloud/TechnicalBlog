@@ -80,4 +80,9 @@ date: 2022-03-05
   - sudo apt install ./google-chrome=stable_current_amd64.deb
   - /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usag
 
-  
+###  vscode 설치 및 실행
+  - 브라우저에서 다운로드
+  - root/Download 로 이동
+  - sudo apt install ./파일명
+  - code --no-sandbox --user-data-dir
+
