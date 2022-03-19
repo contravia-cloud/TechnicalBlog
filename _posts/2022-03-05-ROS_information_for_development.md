@@ -86,3 +86,9 @@ date: 2022-03-05
   - sudo apt install ./파일명
   - code --no-sandbox --user-data-dir
 
+
+###  example
+  - https://github.com/robotpilot/ros2-seminar-examples
+  - https://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html
+  - rosdep install -i --from-path src --rosdistro galactic -y
+  
