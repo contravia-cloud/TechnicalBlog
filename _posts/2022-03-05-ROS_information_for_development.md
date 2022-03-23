@@ -28,6 +28,9 @@ date: 2022-03-05
     --device=/dev/dri:/dev/dri \
     osrf/ros:galactic-desktop
   ```
+  - 도커 공유폴더
+     docker run -it -v /home/contraviau/test_share:/test_share -p 8080:8080 osrf/ros:ssj1600
+  
 
 ### vnc
   - 도커 컨테이너 내에서 ```sudo apt-get update```
