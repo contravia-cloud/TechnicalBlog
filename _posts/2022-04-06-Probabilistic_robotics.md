@@ -1,5 +1,5 @@
 ---
-title: "PROBABILISTIC_ROBOTICS"
+title: "Probabilistic_robotics"
 date: 2022-04-06
 
 ---
