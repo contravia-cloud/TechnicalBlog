@@ -22,9 +22,14 @@ date: 2022-04-06
   이를 통해 모호함과 빌리프의 정도를 수학적으로 나타낼 수 있으며 제어 선택을 통해 불확실성을 낮출 수 있다.
 
 
-### uncertainty
-- 확률의 정의
-  - 확률 정의의 공리
-    - 0 <= P(w) <= 1
-    - ΣP(w) = 1
-    - 
+### 2. uncertainty(불확실성)
+#### 2.1 probability
+##### 2.1.1 possible world
+##### 2.1.2 Axioms in probibility 
+  - 0 <= P(w) <= 1
+  - ΣP(w) = 1
+##### 2.1.3 unconditional probability
+  - Unconditional probability is the degree of belief in a proposition in the absence of any other evidence.
+  - 비조건부 확률이란 다른 증거가 없을 때 명제에 대한 믿음의 정도를 말한다.
+#### 2.2 Conditional Probability
+  - 
