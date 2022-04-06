@@ -1,6 +1,6 @@
 ---
 title: "Probabilistic"
-date: 2022-04-06
+date: 2022-04-05
 
 ---
 
