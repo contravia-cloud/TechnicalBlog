@@ -57,7 +57,7 @@ date: 2022-04-06
     - 환경 내에 있는 주변 객체들의 위치 및 피쳐
     - 움직이는 객체와 사람의 위치와 속도
     - 센서 고장 여부, 충전 잔량 등등
-  - <span style="backgroud-color:red">complete</span>
+  - <span style="background-color:red">complete</span>
 
 
 
