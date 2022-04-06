@@ -23,6 +23,8 @@ date: 2022-04-06
 
 
 
+
+
 > Uncertainty - Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 2020  
   https://www.youtube.com/watch?v=D8RRq3TbtHU  
 > https://wikidocs.net/122768
