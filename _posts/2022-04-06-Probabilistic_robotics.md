@@ -79,9 +79,8 @@ date: 2022-04-06
     - 제어 데이터, uₜ : <U>스테이트의 변화에 관한 정보</U>
 
 ### 2.3.3 확률론적 생성 법칙
-  - <sub>0:t-1</sub>
+  - p(xₜㅣx<sub>0:t-1</sub>,z<sub>1:t-1</sub>,u<sub>1:t</sub>) = p(xₜㅣx<sub>t-1</sub>,uₜ)
   - 
-<span style="font-family:Cambria Math;"> xyd</span>
 
 
 -----------------------------------------------------------------
