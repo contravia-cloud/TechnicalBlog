@@ -46,7 +46,7 @@ date: 2022-04-06
     - 따라서 이것은 조건부 확률이 되는 것이다.
   - conditional probability is degree of belief in a proposition given some evidence that has already been revealed.
     - 조건부 확률은 이미 밝혀진 몇 가지 증거가 주어진 명제에 대한 믿음의 정도이다.
-  - P(오늘 비가올까|어제 비가왔다) 이때 조건부 확률을 계산하는 방법은?  
+  - P(오늘 비가올까ㅣ어제 비가왔다) 이때 조건부 확률을 계산하는 방법은?  
   
 #### 2.3 random variable
   - A random variable is a variable in probability theory with a domain of possible values that it can take on.
@@ -74,8 +74,8 @@ date: 2022-04-06
     - P(a) = P(a,b) + P(a,¬b)
     - P(X = xᵢ) = Σⱼ P( X = xᵢ , Y = yⱼ )
   - conditioning (전체 확률의 법칙, law of total probability)
-    - P(a) = P(a|b)P(b) + P(a|¬b)P(¬b)
-    - P(X = xᵢ) = Σⱼ P( X = xᵢ | Y = yⱼ)P(Y = yⱼ)  
+    - P(a) = P(a|b)P(b) + P(aㅣ¬b)P(¬b)
+    - P(X = xᵢ) = Σⱼ P( X = xᵢ ㅣ Y = yⱼ)P(Y = yⱼ)  
 
 #### 2.7 Bayesian networks
 > 컴퓨터 내부 또는 AI 에이전트에서 정보, 확률, 사건들의 가능성 등을 나타낼 수 있는 방법(확률 모델로서)으로 Bayesian networks를 도입한다.
@@ -85,7 +85,7 @@ date: 2022-04-06
     - directed graph
     - each node represents a random variable
     - arrow from X to Y means X is a parent of Y
-    - each node X has probability distribytion P(X|Parents(X))
+    - each node X has probability distribytion P(XㅣParents(X))
   - inference
     - Query X : the variable for which we want to compute the probability distribution
     - evidence variables E : one or more variables that have been observed for event e
