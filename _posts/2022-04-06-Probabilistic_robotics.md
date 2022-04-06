@@ -24,7 +24,7 @@ date: 2022-04-06
 <img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-06 165948.png" width="60%" height="60%" title="타이틀" alt="bdt2"/>  
 
 
-
+-----------------------------------------------------------------
 > Uncertainty - Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 2020  
   https://www.youtube.com/watch?v=D8RRq3TbtHU  
 > https://wikidocs.net/122768
