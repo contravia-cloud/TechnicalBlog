@@ -21,7 +21,7 @@ date: 2022-04-06
 - 특정 상황이 가장 좋을 것이라는 최적화의 방법이 아니라 추측할 수 있는 전체 공간의 확률 분포를 기반으로 정보를 표현하는 것임  
   이를 통해 모호함과 빌리프의 정도를 수학적으로 나타낼 수 있으며 제어 선택을 통해 불확실성을 낮출 수 있다.
 
-
+<img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-06 165948.png" width="60%" height="60%" title="타이틀" alt="bdt2"/>  
 
 
 
