@@ -51,6 +51,8 @@ date: 2022-04-06
   - 그래서 로봇은 로봇 환경의 스테이트를 고려하여 내부 빌리프를 유지한다.
   - 또한 로봇은 액추에이터를 통해 로봇 환경에 영향을 줄 수 있고 결과는 예측 불가일 수도 있다.  
 
+<img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-07 093751.png" width="200" title="확률론적 로보틱스 그림 2.1" alt="확률론적 로보틱스 그림 2.1"/>  
+
 ### 2.3.1 스테이트 xₜ
   - 환경은 **스테이트**에 따라 그 특성이 정립된다.
   - 스테이트 변수는 다음과 같다.
@@ -80,7 +82,7 @@ date: 2022-04-06
 
 ### 2.3.3 확률론적 생성 법칙
   - 제어 액션 $u_{1}$을 실행한 다음 측정값 $z_{1}$을 취하는 것으로 가정한다.(그냥)
-  - 그리고 스테이트 x가 complete하다고 또 가정한다. (인정^^)
+  - 그리고 스테이트 x가 complete하다고 또 가정한다. (그럴 수도 있겠다...인정^^ )
   - 그러면 아래와 같은 식으로 단순화할 수 있겠다.
   - $p(x_{t}|x_{0:t-1},z_{1:t-1},u_{1:t}) = p(x_{t}|x_{t-1},u_{t})$
   - 
@@ -116,7 +118,7 @@ date: 2022-04-06
     - 예를 들어 날씨가 무작위 변수이고 흐림, 맑음, 비 등이 취할 수 있는 값이 된다.
     - 무작위 변수는 확률 변수라 하고 그 값들이 갖는 확률을 나열하면 확률 분포가 된다.  
   - independence  
-  - independence is the knowledge that one event occurs does not affedct the probability of the other event.
+    - independence is the knowledge that one event occurs does not affedct the probability of the other event.
     - 독립성은 한 사건이 다른 사건의 확률에 영향을 미치지 않는다는 사실이다.  
   
 ### 2.4 bayes' rule
