@@ -51,7 +51,7 @@ date: 2022-04-06
   - 그래서 로봇은 로봇 환경의 스테이트를 고려하여 내부 빌리프를 유지한다.
   - 또한 로봇은 액추에이터를 통해 로봇 환경에 영향을 줄 수 있고 결과는 예측 불가일 수도 있다.  
 
-<img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-07 093751.png" width="200" title="확률론적 로보틱스 그림 2.1" alt="확률론적 로보틱스 그림 2.1"/>  
+<img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-07 093751.png" width="500" title="확률론적 로보틱스 그림 2.1" alt="확률론적 로보틱스 그림 2.1"/>  
 
 ### 2.3.1 스테이트 xₜ
   - 환경은 **스테이트**에 따라 그 특성이 정립된다.
