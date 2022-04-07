@@ -4,7 +4,9 @@ date: 2022-04-06
 
 ---
 
-> PPROBABILITIC ROBOTICS, 에이콘, 세바스찬 스런,볼프람 부르가트,디터 폭스 지음, 남궁영환 옮김
+> PPROBABILITIC ROBOTICS, 에이콘, 세바스찬 스런,볼프람 부르가트,디터 폭스 지음, 남궁영환 옮김  
+> http://www.probabilistic-robotics.org/
+> 
 
 # 01 소개
 ## 1.1 로보틱스 분양의 불확실성
@@ -80,19 +82,24 @@ date: 2022-04-06
   - 제어 액션(control action)
     - 제어 데이터, uₜ : <U>스테이트의 변화에 관한 정보</U>
 
-### 2.3.3 확률론적 생성 법칙(bayesian networks를 통한 '로봇'-'로봇 환경' 인터페이스)
+### 2.3.3 확률론적 생성 법칙(bayesian networks를 통한 '로봇'-'로봇 환경' 인터페이스)  
   - 제어 액션 $u_{1}$을 실행한 다음 측정값 $z_{1}$을 취하는 것으로 가정한다.(그냥)
   - 그리고 스테이트 x가 complete하다고 또 가정한다. (그럴 수도 있겠다...인정^^ )
   - 그러면 아래와 같은 식으로 단순화할 수 있겠다.  
     <span style="background-color:yellow">$p(x_{t}｜x_{0:t-1},z_{1:t-1},u_{1:t}) = p(x_{t}｜x_{t-1},u_{t})$</span>  
   - 또한 조건부 독립이라는 추가적인 가정과 x의 완전성을 통해 아래와 같이 식을 단순화한다.  
     <span style="background-color:yellow">$p(z_{t}｜x_{0:t},z_{1:t-1},u_{1:t}) = p(z_{t}｜x_{t})$</span>  
-    즉 환경 측정 데이터 z는 과거 z와 제어 데이터 u와는 상관없다.(x가 완전성을 갖는다는 전제하에...  
+    즉 환경 측정 데이터 z는 과거 z와 제어 데이터 u와는 상관없다.(x가 완전성을 갖는다는 전제하에...)  
   - $p(x_{t}｜x_{t-1},u_{t})$ : 스테이트 전이 확률
   - $p(z_{t}｜x_{t})$ : 측정 확률  
 <img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-07 103326.png" width="600" title="확률론적 로보틱스 그림 2.2" alt="확률론적 로보틱스 그림 2.2"/>   
   - 상기 그림 : 베이즈 네트워크를 재귀적으로 나타내주는 **다이내믹 베이즈 네크워크**이다.
   - 이러한 시간 생성 모델을 은닉 마르코프 모델(HMM,hidden Markov model) 또는 다이내믹 베이즈 네트워크(DBN)라고 한다.  
+  - <span style="background-color:yellow"> 일반적으로 시스템을 모델링할 때  
+    시스템을 이전상태와 현재상태의 관계식인 **상태방정식**과 현재상태와 센서측정의 관계식인 **측정방정식**으로 모델링 할 수있다.  
+    또한 다른 방법으로도 다양한 확률 모델로 모델링할 수 있는데  
+    베이즈 네트워크 모델을 활용한다면 **스테이트 전이 확률**과 **측정 확률**로 나타낼 수 있다.  
+    이를 통해 베이즈원리를 이용한 추론을 할 수 있게된다. 그 시작이 빌리프이다.</span>  
 
 ### 2.3.4 빌리프 분포
   - 
@@ -153,7 +160,7 @@ date: 2022-04-06
     - P(X = xᵢ) = Σⱼ P( X = xᵢ ㅣ Y = yⱼ)P(Y = yⱼ)  
 
 ### 2.7 Bayesian networks
-> 컴퓨터 내부 또는 AI 에이전트에서 정보, 확률, 사건들의 가능성 등을 나타낼 수 있는 방법(확률 모델로서)으로 Bayesian networks를 도입한다.  
+> 컴퓨터 내부 또는 AI 에이전트에서 정보, 확률과 다양한 사건들 사이의 가능성을 나타낼 수 있는 방법(확률 모델로서)으로 Bayesian networks를 도입한다.  
 
   - Bayesian network is data structure that represents the dependencies among random variables.
     - 베이지안 네트워크는 무작위 변수(확률 변수)들 사이의 의존성을 나타내는 데이터 구조이다.
