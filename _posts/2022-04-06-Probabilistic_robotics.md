@@ -96,7 +96,7 @@ date: 2022-04-06
 <img src="https://contravia-cloud.github.io/TechnicalBlog/assets/img/화면 캡처 2022-04-07 103326.png" width="600" title="확률론적 로보틱스 그림 2.2" alt="확률론적 로보틱스 그림 2.2"/>   
   - 상기 그림 : 베이즈 네트워크를 재귀적으로 나타내주는 **다이내믹 베이즈 네크워크**이다.
   - 이러한 시간 생성 모델을 은닉 마르코프 모델(HMM,hidden Markov model) 또는 다이내믹 베이즈 네트워크(DBN)라고 한다.  
-  - <span style="background-color:blue"> 시스템을 모델링할 때  
+  - <span style="background-color:yellow"> 시스템을 모델링할 때  
     시스템을 이전상태와 현재상태의 관계식인 **상태방정식**과 현재상태와 센서측정의 관계식인 **측정방정식**으로 모델링 할 수 있다.  
     또한 다른 다양한 방법으로 시스템을 모델링할 수도 있는데  
     확률 모델로 베이즈 네트워크 모델을 활용한다면 시스템을 **스테이트 전이 확률**과 **측정 확률**로 모델링 할 수 있다.  
