@@ -5,7 +5,7 @@ date: 2022-04-06
 ---
 
 > PPROBABILITIC ROBOTICS, 에이콘, 세바스찬 스런,볼프람 부르가트,디터 폭스 지음, 남궁영환 옮김  
-> 이글은 'PPROBABILITIC ROBOTICS'를 정리한 글임
+> 이글은 'PPROBABILITIC ROBOTICS'를 정리한 글임  
 > http://www.probabilistic-robotics.org/  
 > https://soohwan-justin.tistory.com/8?category=941681  
 
@@ -116,7 +116,13 @@ date: 2022-04-06
 ## 2.4 베이즈 필터  
 ### 2.4.1 베이즈 필터 알고리즘  
 ![image](https://user-images.githubusercontent.com/57220434/162134839-176e9407-35f3-4db4-bd7b-26568bec7981.png)  
-### 2.4.2 예제
+### 2.4.2 예제  
+![image](https://user-images.githubusercontent.com/57220434/162339052-58901055-9335-4506-b310-be6fd657f494.png)  
+  - 위 그림을 보면 베이즈 네트워크 구성은 앞에서 설명한 대로 구성되어 있고  
+    노드에서의 $P(X｜Parents(X))$ 는 테이블로 주어져 있다.  
+    이러한 시스템에서 우리가 $u_{1} = do_nothing$ 와 $z_{1} = sense_open$ 를 알고있다면(e,증거)  
+    우리는 $bel(x_{1})$을 베이즈 필터 알고리즘을 통해 계산할 수 있다.
+    
 
 
 
