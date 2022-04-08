@@ -128,7 +128,8 @@ date: 2022-04-06
     초기값과 노드에서의 $P(X｜Parents(X))$ 는 테이블로 주어져 있다.  
     이러한 시스템에서 우리가 $u_{1} = do-nothing$ 와 $z_{1} = sense-open$ 를 알고있다면(e,증거)  
     우리는 $bel(x_{1})$을 베이즈 필터 알고리즘을 통해 추론할 수 있다.  
-```
+    
+```python
 from pomegranate import *
 
 # bel_x0 node has no parents
