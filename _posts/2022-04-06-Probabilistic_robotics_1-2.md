@@ -299,7 +299,13 @@ Z1: se_open
     - Query X : the variable for which we want to compute the probability distribution
     - evidence variables E : one or more variables that have been observed for event e
     - hidden variables Y : variables that aren't the query and also haven't been observed  
-    - 추론은 증거(E)가 주어졌을 때 원하는 X의 분포를 계산해내는 것을 말하는데 이때 X가 아닌 다른 변수들은 Y가되어 모든 경우를 고려한 X를 계산하게 된다.
+    - 추론은 증거(E)가 주어졌을 때 원하는 X의 분포를 계산해내는 것을 말하는데 이때 X가 아닌 다른 변수들은 Y가되어 모든 경우를 고려한 X를 계산하게 된다.  
+  - approximate inference  
+    - inference를 하다보면 다항시간안에 계산하기 어려움에 직면할 수 있다.
+    - 이를 해결하기위해 근사추론을 하게되는데 sampling이 한 예이다.  
+
+### 2.8 Sampling
+
 
 ### python 구현
 > pomegranate : https://pomegranate.readthedocs.io/en/latest/  
