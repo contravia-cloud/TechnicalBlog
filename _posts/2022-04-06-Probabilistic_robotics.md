@@ -128,8 +128,11 @@ date: 2022-04-06
     초기값과 노드에서의 $P(X｜Parents(X))$ 는 테이블로 주어져 있다.  
     이러한 시스템에서 우리가 $u_{1} = do-nothing$ 와 $z_{1} = sense-open$ 를 알고있다면(e,증거)  
     우리는 $bel(x_{1})$을 베이즈 필터 알고리즘을 통해 추론할 수 있다.  
-    
+  
+
 ```python
+# model.py
+
 from pomegranate import *
 
 # bel_x0 node has no parents
@@ -173,7 +176,49 @@ model.add_edge(X1, Z1)
 # Finalize model
 model.bake()
 ```
-  
+
+```python
+# likelihood.py
+from model import model
+
+# Calculate probability for a given observation
+probability = model.probability([["is_open", "do_nothing", "is_open", "se_open"]])
+
+print(probability)
+```
+
+```python
+# inference.py
+
+from model import model
+
+# Calculate predictions
+predictions = model.predict_proba({
+    "U1": "do_nothing",
+    "Z1": "se_open"
+})
+
+# Print predictions for each node
+for node, prediction in zip(model.states, predictions):
+    if isinstance(prediction, str):
+        print(f"{node.name}: {prediction}")
+    else:
+        print(f"{node.name}")
+        for value, probability in prediction.parameters[0].items():
+            print(f"    {value}: {probability:.4f}")
+```
+  - 추론 결과(아래)
+```
+BEL_X0
+    is_open: 0.7500
+    is_close: 0.2500
+U1: do_nothing
+X1
+    is_closed: 0.2500
+    is_open: 0.7500
+Z1: se_open
+```
+ 
 ### 2.4.3 베이즈 필터의 수학적 유도  
   - 하고자하는 것  
     $Bel(x_{t}) = P(x_{t}|z_{1:t},u_{1:t})$ : 빌리프는 센서와 제어 데이터로 추론된다.  
@@ -182,10 +227,11 @@ model.bake()
     
 ### 2.4.4 마르코프 가정
   - 현재의 상태가 완전하다면 과거의 데이터가 미래의 데이터에 영향을 줄 수 없다는 가정
-
+  - 계산을 편하게 하기위한 가정이지만 실제로 노이즈에 강건하다.
 
 
 -----------------------------------------------------------------
+# 참고
 > Uncertainty - Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 2020  
 > https://cs50.harvard.edu/ai/2020/  
 > https://www.youtube.com/watch?v=D8RRq3TbtHU  
