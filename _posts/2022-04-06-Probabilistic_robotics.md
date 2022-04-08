@@ -128,7 +128,51 @@ date: 2022-04-06
     초기값과 노드에서의 $P(X｜Parents(X))$ 는 테이블로 주어져 있다.  
     이러한 시스템에서 우리가 $u_{1} = do-nothing$ 와 $z_{1} = sense-open$ 를 알고있다면(e,증거)  
     우리는 $bel(x_{1})$을 베이즈 필터 알고리즘을 통해 추론할 수 있다.  
-    
+```
+from pomegranate import *
+
+# bel_x0 node has no parents
+BEL_X0 = Node(DiscreteDistribution({
+    "is_open": 0.5,
+    "is_close": 0.5
+}), name="BEL_X0")
+
+U1 = Node(DiscreteDistribution({
+    "push": 0,
+    "do_nothing": 1
+}), name="U1")
+
+X1 = Node(ConditionalProbabilityTable([
+    ["is_open", "push","is_open", 1],
+    ["is_open", "push","is_closed", 0],
+    ["is_close", "push","is_open", 0.8],
+    ["is_close", "push","is_closed", 0.2],
+    ["is_open", "do_nothing","is_open", 1],
+    ["is_open", "do_nothing","is_closed", 0],
+    ["is_close", "do_nothing","is_open", 0],
+    ["is_close", "do_nothing","is_closed", 1]
+], [BEL_X0.distribution, U1.distribution]), name="X1")
+
+Z1 = Node(ConditionalProbabilityTable([
+    ["is_open", "se_open", 0.6],
+    ["is_open", "se_closed", 0.4],
+    ["is_closed", "se_open", 0.2],
+    ["is_closed", "se_closed", 0.8]
+], [X1.distribution]), name="Z1")
+
+# Create a Bayesian Network and add states
+model = BayesianNetwork()
+model.add_states(BEL_X0, U1, X1, Z1)
+
+# Add edges connecting nodes
+model.add_edge(BEL_X0, X1)
+model.add_edge(U1, X1)
+model.add_edge(X1, Z1)
+
+# Finalize model
+model.bake()
+```
+  
 ### 2.4.3 베이즈 필터의 수학적 유도  
   - 하고자하는 것  
     $Bel(x_{t}) = P(x_{t}|z_{1:t},u_{1:t})$ : 빌리프는 센서와 제어 데이터로 추론된다.  
@@ -136,14 +180,15 @@ date: 2022-04-06
     $Bel(x_{t}) = \eta P(z_{t}|x_{t})\int P(x_{t}|u_{t},x_{t-1}) Bel(x_{t-1}) dx_{t-1} $  
     
 ### 2.4.4 마르코프 가정
-
+  - 현재의 상태가 완전하다면 과거의 데이터가 미래의 데이터에 영향을 줄 수 없다는 가정
 
 
 
 -----------------------------------------------------------------
 > Uncertainty - Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 2020  
-  https://www.youtube.com/watch?v=D8RRq3TbtHU  
-> https://wikidocs.net/122768
+> https://cs50.harvard.edu/ai/2020/  
+> https://www.youtube.com/watch?v=D8RRq3TbtHU  
+> https://wikidocs.net/122768  
 
 ## 2. uncertainty(불확실성)
 ### 2.1 probability
