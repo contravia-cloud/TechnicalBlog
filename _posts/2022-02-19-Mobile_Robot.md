@@ -30,3 +30,20 @@ date: 2022-02-19
   - source ~/gcamp_ros2_ws/install/local_setup.bash  
   - ros2 run turtlesim turtlesim_node  
 
+
+----------------
+# 자율주행자동차기술  
+> http://www.kmooc.kr/dashboard?status=audit  
+
+
+![image](https://user-images.githubusercontent.com/57220434/162551853-aefc3e56-e2e7-49ea-92c5-b63c8c035c77.png)
+
+
+
+
+
+
+
+
+
+
