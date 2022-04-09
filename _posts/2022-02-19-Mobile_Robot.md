@@ -10,9 +10,37 @@ date: 2022-02-19
     - 경로생성 기술
       - A*
       - RRT/RRT*
-    - 경로추종 기술
-      - Pure Pursuit Control
-      - Model Predictive Control
+    - 경로추종 기술 (조향제어...)
+      - Pure Pursuit Control (기하학적 접근방법, 다양한 동력학적 변수가 제외됨)
+        - 차량이 진행할 경로의 목표점을 잇는 원호의 곡률을 기하학적으로 계산
+      - Stanley 방법
+      - PID 방법 (closed loop, 게인값에 따라서 오실레이션이 있을 수 있다.)
+      - Model Predictive Control(모델예측 접근 방법, 현재정보+예측정보 활용)
+
+  - SLAM (mapping + localization)
+    - visual SLAM
+      - kidnapping - 위치 재조정
+      - 지도 추가
+      - monocular SLAM
+        - 카메라 자세추정 : 서로 다른 시점에서 촬영된 이미지로 3차원 위치 추정
+        - 카메라 트래킹 : 특징점을 이용해서 카메라가 지도 내에 어디 있는지 추정
+      - 기술 : 특징 추출, 특징 매칭, 카메라 자세추정(삼각측량법-> 초기지도작성), 카메라 트래킹
+      - 특징 매칭 시 강건성 확보 알고리즘: 순환 일관성(cycle consistency), epipolar 제약, 호모그라피 
+      - 전역지도관리
+        - 국소지도확장 -> 오차 보정 -> 전역지도정합(전역지도 최적화)  
+           : 번들 조정(정합), 루프결합, 자세그래프 최적화 그리고 카메라 자세 놓쳤을 때 최적화카메라 위치 재조정
+
+
+  - intelligent vehicle의 기본 기술, GNC
+    - guidance(planning) : 경로 설계 (pursuit guidance/proportional navigation guidance)
+    - navigation(항법,perception) : 위치파악 (sensing & perception, dead-reckoning )
+    - control(action) : 경로 설계된 내용을 수행
+
+![image](https://user-images.githubusercontent.com/57220434/162558061-73549c49-d3a4-44f9-a20a-6b4317289a53.png)
+![image](https://user-images.githubusercontent.com/57220434/162558319-1a38506b-ed8e-4e4e-ad98-6eedd7e37a5c.png)
+![image](https://user-images.githubusercontent.com/57220434/162558555-863f4737-1ab7-4099-b7c1-23d03a6a13ec.png)
+![image](https://user-images.githubusercontent.com/57220434/162558566-681f309b-6cc8-40c8-80f8-ab0d4b191553.png)
+![image](https://user-images.githubusercontent.com/57220434/162558722-a87f8805-a6d5-485e-bfef-59d8cce0976e.png)
 
 
 ### 개념어
