@@ -4,6 +4,17 @@ date: 2022-02-19
 
 ---
 
+# 요소기술  
+
+  - 경로 계획
+    - 경로생성 기술
+      - A*
+      - RRT/RRT*
+    - 경로추종 기술
+      - Pure Pursuit Control
+      - Model Predictive Control
+
+
 ### 개념어
 
   - DDS (Data Distribution Service)  
