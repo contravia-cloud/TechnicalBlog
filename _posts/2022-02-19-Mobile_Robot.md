@@ -6,6 +6,11 @@ date: 2022-02-19
 
 # 요소기술  
 
+> http://smroadmap.smtech.go.kr/  
+> 논문 : 세타*: 동적 가중치를 가진 계층 구조식 경로계획법  
+   https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0014017925&dbt=DIKO  
+>
+
   - 경로 계획
     - 경로생성 기술
       - A*
@@ -29,6 +34,12 @@ date: 2022-02-19
       - 전역지도관리
         - 국소지도확장 -> 오차 보정 -> 전역지도정합(전역지도 최적화)  
            : 번들 조정(정합), 루프결합, 자세그래프 최적화 그리고 카메라 자세 놓쳤을 때 최적화카메라 위치 재조정
+  - 인지기술
+    - 센서 융합
+      - data level fusion, feature level fusion, decision level fusion
+      - 확률이론 기반 센서융합 기법(칼만필터 기법,파티클 필터 기법), 인공지능기반 센서융합 기법
+    - 객체인식  
+      - 
 
 
   - intelligent vehicle의 기본 기술, GNC
