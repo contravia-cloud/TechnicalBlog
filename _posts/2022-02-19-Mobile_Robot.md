@@ -11,6 +11,8 @@ date: 2022-02-19
    https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0014017925&dbt=DIKO  
 >
 
+  - 데이터 셋 : BDD100K, KITTI
+
   - 경로 계획
     - 경로생성 기술
       - A*
