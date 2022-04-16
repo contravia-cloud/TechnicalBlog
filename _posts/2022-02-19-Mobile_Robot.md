@@ -9,7 +9,10 @@ date: 2022-02-19
 > http://smroadmap.smtech.go.kr/  
 > 논문 : 세타*: 동적 가중치를 가진 계층 구조식 경로계획법  
    https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0014017925&dbt=DIKO  
->
+> https://www.mdpi.com/2624-8921/3/3/27/pdf  
+> https://miracleyoo.tistory.com/21  
+
+
 
   - 데이터 셋 : BDD100K, KITTI
 
@@ -54,6 +57,11 @@ date: 2022-02-19
 ![image](https://user-images.githubusercontent.com/57220434/162558555-863f4737-1ab7-4099-b7c1-23d03a6a13ec.png)
 ![image](https://user-images.githubusercontent.com/57220434/162558566-681f309b-6cc8-40c8-80f8-ab0d4b191553.png)
 ![image](https://user-images.githubusercontent.com/57220434/162558722-a87f8805-a6d5-485e-bfef-59d8cce0976e.png)
+
+-----------------------  
+> self driving vehicle 
+
+# 
 
 
 ### 개념어
