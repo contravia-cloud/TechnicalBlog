@@ -231,7 +231,16 @@ Z1: se_open
 
 
 -----------------------------------------------------------------
-# 참고
+# 참고  
+
+## 상태방정식  
+> https://www.youtube.com/watch?v=TvuzQtDu5Z4  
+> https://gaussian37.github.io/autodrive-ose-state_equation/  
+![image](https://user-images.githubusercontent.com/57220434/163699139-214001d1-63cc-45b0-8ec8-fde0c21f4227.png)
+
+
+
+
 > Uncertainty - Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 2020  
 > https://cs50.harvard.edu/ai/2020/  
 > https://www.youtube.com/watch?v=D8RRq3TbtHU  
